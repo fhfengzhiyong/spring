@@ -1,0 +1,1 @@
+org.springframework.context.ApplicationListener=com.straw.spring.base.listener.MyApplicationPreparedEvent,com.straw.spring.base.listener.MyApplicationListener,com.straw.spring.base.listener.MyApplicationEnvironmentPreparedEvent
