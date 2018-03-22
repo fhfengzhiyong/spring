@@ -10,6 +10,7 @@ import org.springframework.context.ApplicationListener;
 public class MyListener implements ApplicationListener {
     @Override
     public void onApplicationEvent(ApplicationEvent event) {
+
         System.out.println("系统启动了,"+event.getTimestamp());
     }
 }

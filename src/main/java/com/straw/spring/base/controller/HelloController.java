@@ -1,5 +1,6 @@
 package com.straw.spring.base.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,10 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloController {
+    @Value("http://www.baidu.com")
+    public String name;
     @RequestMapping("/")
     public String index(){
         System.out.println("sd");
-
-        return "hello fefk分fsd f分ee是s";
+        return name;
     }
 }

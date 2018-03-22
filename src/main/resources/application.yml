@@ -4,3 +4,7 @@ spring:
       enabled: true
   main:
     banner-mode: console
+  application:
+    admin:
+      enabled: true
+my.secret: ${random.value}
